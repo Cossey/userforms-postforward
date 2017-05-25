@@ -1,0 +1,11 @@
+---
+Name: userformspostforward
+Only:
+  ModuleExists: userforms
+---
+UserDefinedForm:
+  extensions:
+    - UserFormsPostForwardExtension
+SubmittedForm:
+  extensions:
+    - SubmittedFormPostForwardExtension
