@@ -1,0 +1,13 @@
+mi:
+  AdditionalPostField:
+    SINGULARNAME: 'Whīra Turukitanga'
+    PLURALNAME: 'Ngā Whīra Turukitanga'
+    Name: 'Ingoa'
+    Value: 'Whakataunga'
+  UserDefinedForm:
+    PostForwarding:
+      FWDURLINFO: 'E tomo te hono ki te tuku i te raraunga puka ki.'
+      POSTFWD: 'Pōhi Whakamua'
+      ENABLE: 'Āhei Pōhi Whakamua'
+      FWDURL: 'Whakamua Hono'
+      ADDITIONALFIELDS: 'Ngā Whīra Turukitanga' 

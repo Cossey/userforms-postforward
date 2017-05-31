@@ -1,0 +1,13 @@
+en:
+  AdditionalPostField:
+    SINGULARNAME: 'Additional Field'
+    PLURALNAME: 'Additional Fields'
+    Name: 'Name'
+    Value: 'Value'
+  UserDefinedForm:
+    PostForwarding:
+      FWDURLINFO: 'Enter the URL to HTTP POST the form data to.'
+      POSTFWD: 'POST Forwarding'
+      ENABLE: 'Enable POST Forwarding'
+      ADDITIONALFIELDS: 'Additional Fields'
+      FWDURL: 'Forward URL'

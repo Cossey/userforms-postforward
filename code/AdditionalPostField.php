@@ -8,9 +8,19 @@ class AdditionalPostField extends DataObject
 	);
 	
 	private static $summary_fields = array (
-		'Name' => 'Name',
-		'Value' => 'Value'
+		'Name',
+		'Value',
 	);
+	
+	public function fieldLabels($includerelations = true)
+	{
+		$labels = parent::fieldLabels(true);
+		
+		$labels['Name'] = _t('AdditionalPostField.Name', 'Name');
+		$labels['Value'] = _t('AdditionalPostField.Value', 'Value');
+		
+		return $labels;
+	}
 	
 	private static $has_one = array(
 		'UserDefinedForm' => 'UserDefinedForm'

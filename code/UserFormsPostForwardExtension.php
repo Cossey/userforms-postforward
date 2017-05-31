@@ -14,17 +14,17 @@ class UserFormsPostForwardExtension extends DataExtension
 	public function updateCMSFields(FieldList $fields)
     {
 		$fields->insertAfter(
-			new Tab('PostForward', 'POST Forwarding'),
+			new Tab('PostForward', _t('UserDefinedForm.PostForwarding.POSTFWD', 'POST Forwarding')),
 			'Submissions'
 		);
 
 		
 		$fields->addFieldsToTab("Root.PostForward", array (
-			$PostForwarding = CheckBoxField::create('PostForwarding', 'Enable POST Forwarding'),
-			$PostForwardURL = TextField::create('PostForwardURL', 'Forward POST URL'),
-			$POEndPoints = GridField::create('AdditionalPostFields', 'Additional Fields', $this->owner->AdditionalPostFields(), GridFieldConfig_RecordEditor::create())
+			$PostForwarding = CheckBoxField::create('PostForwarding', _t('UserDefinedForm.PostForwarding.ENABLE' ,'Enable POST Forwarding')),
+			$PostForwardURL = TextField::create('PostForwardURL', _t('UserDefinedForm.PostForwarding.FWDURL', 'Forward URL')),
+			$POEndPoints = GridField::create('AdditionalPostFields', _t('UserDefinedForm.PostForwarding.ADDITIONALFIELDS' , 'Additional Fields'), $this->owner->AdditionalPostFields(), GridFieldConfig_RecordEditor::create())
 		));
-		$PostForwardURL->setRightTitle('Enter the URL to HTTP POST the form data to.');
+		$PostForwardURL->setRightTitle(_t('UserDefinedForm.PostForwarding.FWDURLINFO', 'Enter the URL to HTTP POST the form data to.'));
 		
 		return $fields; 
 	}
